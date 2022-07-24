@@ -1,6 +1,11 @@
-// Permutations function
-const getPermutations = arr => {
+const permOutput = document.querySelector(".first")
+const input = document.querySelector(".input")
 
+// Permutations function
+const getPermutations = (event) => {
+  event.preventDefault();
+
+  arr = Array.from(input.value.toString()).map(Number);
   const output = [];
 
   const swapInPlace = (arrToSwap, indexA, indexB) => {
@@ -28,7 +33,7 @@ const getPermutations = arr => {
     }
   };
 
-  generate(arr.length. arr.slice());
+  generate(arr.length, arr.slice());
 
-  return output;
+  return permOutput.innerHTML = JSON.stringify(output);
 };
