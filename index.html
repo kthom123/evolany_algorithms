@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charse="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <title>Evolany Algorithms</title>
   </head>
@@ -26,17 +27,24 @@
             <h2>SortedArray</h2>
             <p>Enter a list of numbers</p>
             <form class="input">
-              <input type="number" placeholder="e.g. 4253">
-              <input type="submit" value="Sort">
+              <input type="number" placeholder="e.g. 4253" class="sort-input">
+              <input type="submit" value="Sort" class="sort-submit">
             </form>
+            <div class="sort output">
+              <div class="sorted"></div>
+              <div class="reversed"></div>
+            </div>
           </div>
           <div class="card-category">
             <h2>Generate File</h2>
             <p>Enter a number of megabytes</p>
             <form class="input">
-              <input type="number" placeholder="e.g. 32">
-              <input type="submit" value="Generate">
+              <input type="number" placeholder="e.g. 32" class="generate-input">
+              <input type="submit" value="Generate" class="generate-submit">
             </form>
+            <div class="generate output">
+              <a class="download-btn" href="">Download File</a>
+            </div>
           </div>
         </div>
       </div>
