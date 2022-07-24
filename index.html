@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charse="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Evolany Algorithms</title>
   </head>
   <body>
     <div id="page-container">
@@ -17,15 +17,16 @@
             <h2>Permutations</h2>
             <p>Enter a list of numbers (No Duplicates)</p>
               <form class="input">
-                <input type="number" placeholder="123">
-                <input type="submit" value="Input">
+                <input type="number" placeholder="e.g. 123" class="perm-input">
+                <input type="submit" value="Input" class="perm-submit">
               </form>
+              <div class="perm output"></div>
           </div>
           <div class="card-category">
             <h2>SortedArray</h2>
             <p>Enter a list of numbers</p>
             <form class="input">
-              <input type="number" placeholder="123">
+              <input type="number" placeholder="e.g. 4253">
               <input type="submit" value="Sort">
             </form>
           </div>
@@ -33,7 +34,7 @@
             <h2>Generate File</h2>
             <p>Enter a number of megabytes</p>
             <form class="input">
-              <input type="number" placeholder="32">
+              <input type="number" placeholder="e.g. 32">
               <input type="submit" value="Generate">
             </form>
           </div>
@@ -45,5 +46,6 @@
           <a href="https://www.linkedin.com/in/kylejwthomas" target="_blank" class="linkedin">LinkedIn</a></h4>
       </footer>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -1,11 +1,13 @@
-const permOutput = document.querySelector(".first")
-const input = document.querySelector(".input")
+const permInput = document.querySelector(".perm-input");
+const permSubmit = document.querySelector(".perm-submit");
+const permOutput = document.querySelector(".perm");
+
 
 // Permutations function
 const getPermutations = (event) => {
   event.preventDefault();
 
-  arr = Array.from(input.value.toString()).map(Number);
+  arr = Array.from(permInput.value.toString()).map(Number);
   const output = [];
 
   const swapInPlace = (arrToSwap, indexA, indexB) => {
@@ -37,3 +39,5 @@ const getPermutations = (event) => {
 
   return permOutput.innerHTML = JSON.stringify(output);
 };
+
+permSubmit.addEventListener("click", getPermutations);
